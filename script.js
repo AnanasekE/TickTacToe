@@ -31,6 +31,7 @@ function move(event) {
             elem.innerHTML = player0sign
             player = 0
             console.log(field);
+            checkWin()
             return
         } 
         if (!player) {
@@ -38,6 +39,7 @@ function move(event) {
             elem.innerHTML = player1sign
             player = 1
             console.log(field);
+            checkWin()
             return
         }
         
@@ -45,4 +47,7 @@ function move(event) {
 }
 function checkWin() {
     console.log('check win')
+    for (var i = 0; i < wins; i++) {
+        console.log(wins[i]);
+    }
 }
